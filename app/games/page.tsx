@@ -9,7 +9,7 @@ export default async function Games(){
             <div className="bg-gray-100 flex flex-col items-center justify-center h-screen">
                 <div className="flex items-center justify-between pb-4 mb-4">
                     <span className="text-lg">Created Users:</span>
-                    <span className="text-2xl font-bold">500,000</span>
+                    <span className="text-2xl font-bold"> Feature not implemented</span>
                 </div>
                     <Image src="/icons/CM_Icon3.png" alt="Game Screen 1" width={200} height={200} className="rounded-md" />
 
