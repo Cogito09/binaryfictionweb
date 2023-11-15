@@ -9,7 +9,7 @@ export default function navMenu(){
     return (
         <nav className="flex items-center justify-between py-5 px-5">
             <div className="flex items-center">
-                <Image src="/logo_64.svg" alt="logo" width={64 } height={64} />
+                <Image src="/icons/logo_64.png" alt="logo" width={64 } height={64} />
             </div>
             <nav className="flex items-center justify-center">
                 <Button asChild variant="ghost">
