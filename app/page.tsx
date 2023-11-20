@@ -1,3 +1,5 @@
+"use client"
+
 import NavMenu from '../components/navMenu'
 import Image from 'next/image'
 import {Button} from "@/components/ui/button";
@@ -12,14 +14,14 @@ export default function Home() {
                 {/* Big logo image */}
                 <div className="text-center">
                     <Image
-                        src="/icons/logo_512.png"
+                        src="https://cdn.discordapp.com/attachments/1175943800217161759/1175944021990985901/logo_512.png"
                         alt="Big Logo"
                         width={400}
                         height={400} // Adjust the height according to your image aspect ratio
                         className="mx-auto mb-8"
                     />
                     <Image
-                        src="/icons/binary_logo_512.png"
+                        src="https://cdn.discordapp.com/attachments/1175943800217161759/1175944020233551953/binary_logo_512.png?ex=656d1236&is=655a9d36&hm=6a77bfcf4a8caf490f7cc9a3c3237c5eb74d452a1528d3d3d6f677b7f8d8e4e0&"
                         alt="Big Logo"
                         width={400}
                         height={400} // Adjust the height according to your image aspect ratio

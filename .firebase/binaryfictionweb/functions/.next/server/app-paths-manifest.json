@@ -1,0 +1,8 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/games/page": "app/games/page.js",
+  "/page": "app/page.js",
+  "/privacyPolicy/page": "app/privacyPolicy/page.js",
+  "/termsOfService/page": "app/termsOfService/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}

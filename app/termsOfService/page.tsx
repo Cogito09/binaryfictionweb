@@ -1,4 +1,5 @@
-export default async function TermsOfService() {
+"use client"
+export default function TermsOfService() {
     return (
         <div className="flex items-center justify-center h-screen">
             <div className="max-w-3xl p-6 bg-gray-100 rounded-lg overflow-y-auto max-h-screen">
