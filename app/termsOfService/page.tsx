@@ -15,18 +15,19 @@ export default function TermsOfService() {
                     The Cube Miner app stores and processes personal data that you have provided to us, to provide our Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Cube Miner app won’t work properly or at all.
                 </p>
 
-                <p className="text-lg ">
-                    Google Play Services
-                </p>
-                <p className="text-lg ">
-                    Google Analytics for Firebase
-                </p>
-                <p className="text-lg ">
-                    Firebase Crashlytics
+                <p className="text-lg mb-4">
+                    <a href="https://www.google.com/policies/privacy/" style={{ color: 'blue' }}>Google Play Services</a>
                 </p>
                 <p className="text-lg mb-4">
-                    Unity
+                    <a href="https://firebase.google.com/support/privacy" style={{ color: 'blue' }}>Google Analytics for Firebase</a>
                 </p>
+                <p className="text-lg mb-4">
+                    <a href="https://firebase.google.com/support/privacy/" style={{ color: 'blue' }}>Firebase Crashlytics</a>
+                </p>
+                <p className="text-lg mb-4">
+                    <a href="https://unity3d.com/legal/privacy-policy" style={{ color: 'blue' }}>Unity</a>
+                </p>
+
                 <p className="text-lg mb-4">
                     You should be aware that there are certain things that Binary Fiction will not take responsibility for. Certain functions of the app will require the app to have an active internet connection...
                 </p>

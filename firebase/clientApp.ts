@@ -12,7 +12,8 @@ const firebaseConfig = {
     storageBucket: "binaryfictionweb.appspot.com",
     messagingSenderId: "1001004571218",
     appId: "1:1001004571218:web:136721859d1eaa385e1d8b",
-    measurementId: "G-EBBLMPF4V8"
+    measurementId: "G-EBBLMPF4V8",
+    hostingOrigin: "binaryfictionweb.web.app",
 };
 
 // Initialize Firebase
