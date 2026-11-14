@@ -1,37 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Binary Fiction
 
-## Getting Started
+A single-scroll studio and game portfolio built with the existing Next.js 14 App Router, React, TypeScript and Tailwind setup. The production build remains a static export for the existing Firebase hosting project.
 
-First, run the development server:
+## Development
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The build checks TypeScript and the existing Next.js ESLint configuration, then exports the site to `out/`.
 
-## Learn More
+## Content and artwork
 
-To learn more about Next.js, take a look at the following resources:
+- `lib/site-content.ts` contains the public hero description, studio statement, games, services and collaborator details. Add games to the array to extend both the scrolling chapters and their navigation.
+- `app/page.tsx` defines the homepage and its section headings.
+- `components/studio-art.tsx` contains local vector artwork and a temporary geometric brand mark. The artwork is illustrative; replace it with approved brand assets and gameplay screenshots when available.
+- The second game is explicitly a casino-template placeholder. Its title, description and visuals can be replaced independently of Cube Miner.
+- The artist profile uses an abstract avatar, placeholder name and an absent portfolio URL. Supply the approved name, portrait and real portfolio URL before presenting it as a completed profile. A portfolio link appears only when `portfolioUrl` is set.
+- Private investor demos are not included in public content.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The game collection uses normal vertical scrolling and a sticky navigation list. On smaller screens the list becomes a horizontal sticky bar. Links work without custom scroll interception, and decorative animations respect reduced-motion preferences.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Routes
 
-## Deploy on Vercel
+- `/`: hero, game collection, development services, collaborators and footer.
+- `/games/`: compatibility redirect to `/#games`.
+- `/privacyPolicy/`: existing privacy policy, with a shared navigation and legal wrapper.
+- `/termsOfService/`: existing terms of service, with the same wrapper.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The existing legal text is unchanged. Both legal pages remain independent and linked from the footer.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# binaryfictionweb
+## Hosting
+
+Firebase configuration is retained in `firebase.json` and `.firebaserc`. Building produces the static files; pushing a branch does not itself deploy Firebase hosting. The generated `.firebase/` directory is not source for the website and should not be included in feature commits.
